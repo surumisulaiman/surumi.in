@@ -8,6 +8,7 @@ body{
     width: 1024px;
     margin:auto;
     margin-bottom: 104px;
+    overflow-x:hidden;
 }
 
 hr{
@@ -146,6 +147,7 @@ h5.site_details{
 /* Medium devices (landscape tablets, 1024px and down) */
 @media only screen and (max-width: 1024px) {
     body{
+        width: calc(100% - 80px);
         margin:0 40px;
     }
 
@@ -166,7 +168,8 @@ h5.site_details{
  /* Extra small devices (phones, 420px and down) */
  @media only screen and (max-width: 420px) {
     body{
-        margin:0 24px;
+        width: calc(100% - 64px);
+        margin:0 32px;
     }
     .section{
         flex-direction: column;
