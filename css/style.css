@@ -7,7 +7,7 @@
 body{
     width: 1024px;
     margin:auto;
-    margin-bottom: 104 px;
+    margin-bottom: 104px;
 }
 
 hr{
@@ -45,6 +45,7 @@ h5{
    font-size: 16px;
    line-height: 1.5; 
    text-transform: uppercase;
+   color: #797979;
 }
 
 p{
@@ -58,6 +59,7 @@ p{
 
 section{
     margin-top: 40px;
+    display: flex;
 }
 
 
@@ -72,6 +74,7 @@ section{
 /* Main Data
 #################*/
 .main_data{
+    flex-direction: column;
     margin-top: 270px;
     margin-bottom: 104px;
 }
@@ -98,51 +101,85 @@ h5.site_details{
 #################*/
 
 .about{
-display: flex;
+
 }
 
 
 /* Technical Skills
 #################*/
 .technical_skills{
-    display: flex;
+   
 }
 
 /* personal_details
 #################*/
 .personal_details{
-    display: flex;
 }
 
 /* websites_profiles
 #################*/
 .websites_profiles{
-    display: flex;
+  
 }
 
 /* experience
 #################*/
 .experience{
-    display: flex;
+   
 }
  /* Education 
  ##################*/
  .education{
-     display: flex;
+    
  }
 
- /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    body{
-        margin:0 24px;
+
+.education div,.experience div{
+    margin-bottom: 32px;
+}
+
+.education div,.experience div > :last-child {
+     margin-bottom: 0 !important;
     }
 
-} 
 
 /* Medium devices (landscape tablets, 1024px and down) */
 @media only screen and (max-width: 1024px) {
     body{
-        margin:0 24px;
+        margin:0 40px;
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    .section_title{
+        max-width: auto;
+    }
+    
+    .section_data{
+        margin-left: 0px;
+        margin-top: 16px;
     }
 } 
+
+ /* Extra small devices (phones, 420px and down) */
+ @media only screen and (max-width: 420px) {
+    body{
+        margin:0 24px;
+    }
+    .section{
+        flex-direction: column;
+    }
+
+    .section_title{
+        max-width: auto;
+    }
+    
+    .section_data{
+        margin-left: 0px;
+        margin-top: 16px;
+    }
+
+}
  
