@@ -3,10 +3,11 @@
     padding: 0;
     color: #4a4a4a;
 }
+
 body{
     width: 1024px;
     margin:auto;
-    margin-bottom: 104px;
+    margin-bottom: 104 px;
 }
 
 hr{
@@ -124,3 +125,24 @@ display: flex;
 .experience{
     display: flex;
 }
+ /* Education 
+ ##################*/
+ .education{
+     display: flex;
+ }
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        margin:0 24px;
+    }
+
+} 
+
+/* Medium devices (landscape tablets, 1024px and down) */
+@media only screen and (max-width: 1024px) {
+    body{
+        margin:0 24px;
+    }
+} 
+ 
