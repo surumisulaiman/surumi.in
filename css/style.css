@@ -187,6 +187,10 @@ h5.site_details{
     .section{
         flex-direction: column;
     }
+    .main_data{
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
     .site_name{
         font-size: 64px;
         line-height: 64px;
