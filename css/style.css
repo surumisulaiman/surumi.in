@@ -5,7 +5,7 @@
 }
 
 body{
-    width: 1024px;
+    width: 960px;
     margin:auto;
     margin-bottom: 104px;
     overflow-x:hidden;
@@ -75,10 +75,23 @@ section{
 /* Main Data
 #################*/
 .main_data{
-    flex-direction: column;
+    display: flex;
+    width: 100%;
     margin-top: 270px;
     margin-bottom: 104px;
 }
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.photo{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
 .site_name{
     max-width: 375px;
 }
@@ -173,6 +186,21 @@ h5.site_details{
     }
     .section{
         flex-direction: column;
+    }
+    .site_name{
+        font-size: 64px;
+        line-height: 64px;
+    }
+    .info,.photo{
+        width: 100%;
+    }
+    .photo img{
+        width: 70%;
+        margin-top: 24px;
+    }
+    .photo{
+        justify-content: center;
+        
     }
 
     .section_title{
