@@ -70,6 +70,8 @@ section{
 
 .section_data{
     margin-left: 260px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Main Data
@@ -108,6 +110,33 @@ h5.site_details{
 
 .main_data span{
     color: #797979;
+}
+
+.disc{
+    text-align: center;
+    
+}
+
+.disc p{
+    font-size: 16px;
+    padding-top: 16px;
+}
+.connect{
+    margin-top: 24px;
+}
+.social{
+    margin-top: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 64px;
+    border-top: 1px solid #797979;
+    padding: 32px 0px;
+
 }
 
 
